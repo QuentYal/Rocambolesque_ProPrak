@@ -1,0 +1,291 @@
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(236, 236, 236);
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li,
+a {
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0% 5%;
+  z-index: 1;
+}
+
+.scroll {
+  height: 10%;
+  background-color: rgb(0, 0, 0);
+}
+
+#logo {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a,
+.lft {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: white;
+  -webkit-transition: all 0.3 ease 0s;
+  transition: all 0.3 ease 0s;
+}
+
+.nav__links li a:hover {
+  color: rgb(240, 184, 82);
+}
+
+ul.split {
+  float: left;
+}
+
+.lft {
+  padding: 0% 1rem;
+}
+
+.lft:hover {
+  color: rgb(240, 184, 82);
+}
+
+section {
+  background-color: #ccc;
+  height: 100vh;
+  margin: 0;
+  padding: 2.5rem 4rem;
+}
+section h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  margin: 0;
+  padding: 6rem 0 4rem 0;
+  color: black;
+}
+
+section:nth-of-type(2n) {
+  background-color: #ccc;
+}
+
+section:last-of-type {
+  height: 100vh;
+}
+
+section.landing_section {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+section.landing_section div.background_image {
+  width: 100%;
+  height: 100%;
+}
+section.landing_section div.background_image img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+section.landing_section div.background_image div.image_cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+section.landing_section div.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  padding-top: 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.landing_section div.text div.content {
+  position: absolute;
+  text-align: center;
+}
+section.landing_section div.text div.content h1 {
+  font-size: 64px;
+  color: white;
+}
+section.landing_section div.text div.content div.button button {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: rgb(240, 184, 82);
+  border: none;
+  border-radius: 10px;
+}
+section.landing_section div.text div.content div.button button a {
+  color: white;
+}
+section.landing_section div.text div.content div.button :hover {
+  background-color: rgb(240, 164, 24);
+}
+
+section#about div.over_rocambolesque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 6rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+section#about div.over_rocambolesque div.image_content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 0rem 5rem 2rem 10rem;
+}
+section#about div.over_rocambolesque div.rocambolesque_info h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+section#about div.over_rocambolesque div.rocambolesque_info div.content {
+  max-width: 80%;
+}
+section#about div.over_rocambolesque div.rocambolesque_info div.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+section#about div.bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3rem;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+section#about div.bar div.bar_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 80%;
+  padding-left: 10%;
+}
+section#about div.bar div.bar_info h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 32px;
+  margin: 0;
+}
+section#about div.bar div.bar_info div.content {
+  max-width: 90%;
+}
+section#about div.bar div.bar_info div.content p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+}
+section#about div.bar div.image_bar img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: 0rem 15rem 2rem 5rem;
+}
+
+section#openingstijden {
+  padding: 0;
+}
+section#openingstijden div.banner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 8.5rem;
+  padding-top: 5rem;
+}
+section#openingstijden div.banner img {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+section#openingstijden div.banner div.image_cover {
+  position: absolute;
+  width: 100%;
+  height: 11rem;
+  background-color: rgba(0, 0, 0, 0.411);
+}
+section#openingstijden div.banner div.title {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+section#openingstijden div.banner div.title h1 {
+  position: absolute;
+  color: white;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: rgb(22, 22, 22);
+}
+footer div.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer div.footer h1 {
+  padding: 5rem 0;
+  color: white;
+}
