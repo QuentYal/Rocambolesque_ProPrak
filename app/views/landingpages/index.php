@@ -36,7 +36,7 @@
             <div class="image_cover"></div>
             <div class="text">
                 <div class="content">
-                    <h1>"Quote"</h1> 
+                    <h1>"Quote"</h1>
                     <!-- Wil je zeker zijn van een plekje in ons restaurant, reserveer dan hier. -->
                     <div class="button">
                         <button><a href="<?= URLROOT; ?>/reserveren">Reserveer online</a></button>
@@ -82,10 +82,42 @@
                 <h1>Openingstijden</h1>
             </div>
         </div>
-
-    </section>
-    <section id="menu">
-        <h1>Menu</h1>
+        <div class="logo"><img src="../../../public/img/logo-v3-klein.png" alt="logo"></div>
+        <div class="content">
+            <div class="title">
+                <h2>Rocambolesque</h2>
+                <h2>Openingstijden en tarieven per 2 uur</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item"><h3>Maandag t/m donderdag</h3></div>
+                <div class="grid-item"><h3>17:00 - 22:00</h3></div>
+                <div class="grid-item"><h4>Tarieven</h4></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"><h5>Volwassenen</h5></div>
+                <div class="grid-item"><h5>35 euro</h5></div>
+                <div class="grid-item"><h5>Kinderen tot 18 jaar</h5></div>
+                <div class="grid-item"><h5>25 euro</h5></div>
+            </div>
+            <div class="line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><h3>Vrijdag t/m zondag   </h3></div>
+                <div class="grid-item"><h3>17:00 - 22:00</h3></div>
+                <div class="grid-item"><h4>Tarieven</h4></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"><h5>Volwassenen</h5></div>
+                <div class="grid-item"><h5>42 euro</h5></div>
+                <div class="grid-item"><h5>Kinderen tot 18 jaar</h5></div>
+                <div class="grid-item"><h5>32 euro</h5></div>
+            </div>
+            <div class="line"></div>
+            <div class="grid-container">
+                <div class="grid-item"><h1>Bar</h1></div>
+                <div class="grid-item"></div>
+                <div class="grid-item"><h3>Maandag t/m zondag</h3></div>
+                <div class="grid-item"><h3>22:00 - 24:00</h3></div>
+            </div>
+        </div>
     </section>
 
 
