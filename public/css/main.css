@@ -4,7 +4,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(255, 255, 255);
   scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ header {
           align-items: center;
   width: 100%;
   padding: 0% 5%;
-  z-index: 1;
+  z-index: 3;
 }
 
 .scroll {
@@ -73,6 +73,7 @@ header {
 
 ul.split {
   float: left;
+  margin: 0;
 }
 
 .lft {
@@ -84,7 +85,7 @@ ul.split {
 }
 
 section {
-  background-color: #ccc;
+  background-color: #ffffff;
   height: 100vh;
   margin: 0;
   padding: 2.5rem 4rem;
@@ -162,6 +163,15 @@ section.landing_section div.text div.content div.button :hover {
   background-color: rgb(240, 164, 24);
 }
 
+section#about {
+  background: white;
+}
+@media screen and (max-width: 380px) {
+  section#about {
+    height: 125rem;
+    padding: 0;
+  }
+}
 section#about div.over_rocambolesque {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -172,6 +182,17 @@ section#about div.over_rocambolesque {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media screen and (max-width: 380px) {
+  section#about div.over_rocambolesque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 section#about div.over_rocambolesque div.image_content img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -179,6 +200,18 @@ section#about div.over_rocambolesque div.image_content img {
   height: 350px;
   border-radius: 50%;
   margin: 0rem 5rem 2rem 10rem;
+}
+@media screen and (max-width: 380px) {
+  section#about div.over_rocambolesque div.image_content img {
+    margin: 0;
+    width: 340px;
+    height: 340px;
+  }
+}
+@media screen and (max-width: 380px) {
+  section#about div.over_rocambolesque div.rocambolesque_info {
+    padding: 0 1rem;
+  }
 }
 section#about div.over_rocambolesque div.rocambolesque_info h2 {
   font-family: "Francois One", sans-serif;
@@ -192,6 +225,11 @@ section#about div.over_rocambolesque div.rocambolesque_info div.content p {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
 }
+@media screen and (max-width: 380px) {
+  section#about div.over_rocambolesque div.rocambolesque_info div.content p {
+    font-size: 16px;
+  }
+}
 section#about div.bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +239,17 @@ section#about div.bar {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+@media screen and (max-width: 380px) {
+  section#about div.bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 section#about div.bar div.bar_info {
   display: -webkit-box;
@@ -233,8 +282,16 @@ section#about div.bar div.image_bar img {
   border-radius: 50%;
   margin: 0rem 15rem 2rem 5rem;
 }
+@media screen and (max-width: 380px) {
+  section#about div.bar div.image_bar img {
+    margin: 0;
+    width: 300px;
+    height: 300px;
+  }
+}
 
 section#openingstijden {
+  height: 90rem;
   padding: 0;
 }
 section#openingstijden div.banner {
@@ -252,7 +309,7 @@ section#openingstijden div.banner img {
 section#openingstijden div.banner div.image_cover {
   position: absolute;
   width: 100%;
-  height: 11rem;
+  height: 12.4rem;
   background-color: rgba(0, 0, 0, 0.411);
 }
 section#openingstijden div.banner div.title {
@@ -263,6 +320,104 @@ section#openingstijden div.banner div.title {
 section#openingstijden div.banner div.title h1 {
   position: absolute;
   color: white;
+}
+section#openingstijden div.logo {
+  position: relative;
+  text-align: center;
+  top: 15%;
+  z-index: 2;
+}
+section#openingstijden div.logo img {
+  border: 5px solid rgb(104, 0, 0);
+  border-radius: 50%;
+}
+section#openingstijden div.content {
+  position: relative;
+  height: 60%;
+  width: 80%;
+  top: 8%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(255, 238, 192);
+  border: 5px solid rgb(104, 0, 0);
+  border-radius: 10px;
+  z-index: 1;
+}
+@media screen and (max-width: 380px) {
+  section#openingstijden div.content {
+    height: 65%;
+  }
+}
+section#openingstijden div.content div.title {
+  padding-top: 6rem;
+}
+section#openingstijden div.content div.title h2 {
+  font-family: "Francois One", sans-serif;
+  font-size: 32px;
+}
+section#openingstijden div.content div.line {
+  width: 90%;
+  height: 5px;
+  margin: 0 auto;
+  background-color: black;
+}
+section#openingstijden div.content div.grid-container {
+  display: grid;
+  text-align: left;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1rem 11rem;
+  -webkit-column-gap: 0rem;
+     -moz-column-gap: 0rem;
+          column-gap: 0rem;
+  row-gap: 0rem;
+  grid-template-columns: auto auto;
+}
+@media screen and (max-width: 380px) {
+  section#openingstijden div.content div.grid-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    margin: 1rem auto;
+    -webkit-column-gap: 4rem;
+       -moz-column-gap: 4rem;
+            column-gap: 4rem;
+  }
+}
+section#openingstijden div.content div.grid-container div.grid-item {
+  padding: 0rem 3rem 0 0;
+}
+@media screen and (max-width: 380px) {
+  section#openingstijden div.content div.grid-container div.grid-item {
+    padding: 0;
+    width: 15rem;
+  }
+}
+section#openingstijden div.content div.grid-container div.grid-item h1 {
+  font-family: "Francois One", sans-serif;
+  font-size: 32px;
+  margin: 1rem 0rem;
+  padding: 0;
+}
+section#openingstijden div.content div.grid-container div.grid-item h3 {
+  font-family: "Francois One", sans-serif;
+  font-size: 32px;
+  margin: 1rem 0rem;
+  padding: 0;
+}
+section#openingstijden div.content div.grid-container div.grid-item h4 {
+  font-family: "Francois One", sans-serif;
+  font-size: 24px;
+  margin: 0rem 0rem 1rem 0rem;
+  padding: 0;
+}
+section#openingstijden div.content div.grid-container div.grid-item h5 {
+  font-family: "Francois One", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
@@ -286,6 +441,12 @@ footer div.footer {
           align-items: center;
 }
 footer div.footer h1 {
-  padding: 5rem 0;
+  margin: 0;
+  padding: 3rem 0rem 1rem 0rem;
+  color: white;
+}
+footer div.footer div.media-links ion-icon {
+  padding: 0rem 1rem;
+  font-size: 32px;
   color: white;
 }
