@@ -22,8 +22,11 @@ class Session
     if (!empty(self::$session_name)) session_name(self::$session_name);
 
     if (!session_start()) throw new Exception("Unable to start session");
-  }
 
+    if (!array_key_exists('_flash', $_SESSION)  || !isset($_SESSION['_flash'])) {
+      $_SESSION['_flash'] = [];
+    }
+  }
 
   public static function save(): void
   {
