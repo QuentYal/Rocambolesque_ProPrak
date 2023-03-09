@@ -1,5 +1,6 @@
     <div>
         <h1><?= $data['title'] ?></h3>
+            <a href="<?= URLROOT . "/landingspages/index"; ?>">Home</a>
             <a href="<?= URLROOT . "/menus/index"; ?>">Menus</a>
             <tr>
                 <h3>Soep</h3>
