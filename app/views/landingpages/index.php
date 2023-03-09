@@ -20,7 +20,7 @@
             <ul class="nav__links">
                 <li><a href="<?= URLROOT; ?>#about">Over</a></li>
                 <li><a href="<?= URLROOT; ?>#openingstijden">Openingstijden</a></li>
-                <li><a href="<?= URLROOT; ?>#menu">Menu</a></li>
+                <li><a href="<?= URLROOT . "/menus/index"; ?>">Menu</a></li>
                 <li><a href="<?= URLROOT; ?>contact">Contact</a></li>
             </ul>
         </nav>
