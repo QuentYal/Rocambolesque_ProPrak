@@ -635,3 +635,32 @@ footer div.footer div.media-links ion-icon {
   font-size: 32px;
   color: white;
 }
+
+
+.succes-message {
+  z-index: 10;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  width: calc(100vw / 4);
+  height: fit-content;
+  background-color: #94ff79;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.error-message {
+  z-index: 10;
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+  width: calc(100vw / 4);
+  height: fit-content;
+  background-color: #ff7979;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}

@@ -1,1 +1,16 @@
 @import "pages/_landingpage.scss";
+
+
+.succes-message {
+  z-index: 10;
+  position: absolute;
+  bottom: 1rem;
+  width: calc(100vw / 4);
+  height: fit-content;
+  background-color: #94ff79;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+

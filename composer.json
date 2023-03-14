@@ -1,0 +1,10 @@
+{
+    "require": {
+        "raoul/php-validator": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
