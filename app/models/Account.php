@@ -9,10 +9,10 @@ class Account
     $this->db = new Database();
   }
 
-  public function update($data, $id)
+  public function update($data)
   {
     $this->db->query('UPDATE person SET Firstname = :firstname, Infix = :infix, Lastname = :lastname WHERE id = :id');
-    $this->db->bind(':id', $id);
+    $this->db->bind(':id', $data['id']);
     $this->db->bind(':firstname', $data['firstname']);
     $this->db->bind(':infix', $data['infix']);
     $this->db->bind(':lastname', $data['lastname']);
@@ -22,15 +22,5 @@ class Account
     } else {
       return false;
     }
-  }
-
-  public function getAccount($id)
-  {
-    $this->db->query('SELECT * FROM person WHERE id = :id');
-    $this->db->bind(':id', $id);
-
-    $row = $this->db->single();
-
-    return $row;
   }
 }
