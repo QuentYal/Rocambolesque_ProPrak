@@ -21,7 +21,7 @@
         <li><a href="<?= url('#about') ?>">Over</a></li>
         <li><a href="<?= url('#openingstijden') ?>">Openingstijden</a></li>
         <li><a href="<?= url('#menu') ?>">Menu</a></li>
-        <li><a href="<?= url('contact') ?>">Contact</a></li>
+        <li><a href="<?= url('#contact') ?>">Contact</a></li>
       </ul>
     </nav>
     <ul class="split">
@@ -110,6 +110,10 @@
   </section>
   <section id="menu">
     <h1>Menu</h1>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
   </section>
 
 
