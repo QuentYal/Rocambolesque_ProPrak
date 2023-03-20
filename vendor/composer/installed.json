@@ -1,0 +1,56 @@
+{
+    "packages": [
+        {
+            "name": "raoul/php-validator",
+            "version": "V1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RaoulvanWijk/Validator.git",
+                "reference": "f0fd20d385a81cbdb9097ddfcf815a442c249270"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RaoulvanWijk/Validator/zipball/f0fd20d385a81cbdb9097ddfcf815a442c249270",
+                "reference": "f0fd20d385a81cbdb9097ddfcf815a442c249270",
+                "shasum": ""
+            },
+            "time": "2023-03-06T20:00:00+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Raoul\\Validator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raoul van Wijk",
+                    "email": "raoul.van.wijk05@gmail.com"
+                }
+            ],
+            "description": "A simple validator for PHP",
+            "keywords": [
+                "validation",
+                "validation library",
+                "validation library for PHP",
+                "validation package",
+                "validation package for PHP",
+                "validation tool",
+                "validation tool for PHP",
+                "validator"
+            ],
+            "support": {
+                "issues": "https://github.com/RaoulvanWijk/Validator/issues",
+                "source": "https://github.com/RaoulvanWijk/Validator/tree/V1.1.0"
+            },
+            "install-path": "../raoul/php-validator"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

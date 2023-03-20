@@ -1,0 +1,28 @@
+{
+    "name": "raoul/php-validator",
+    "description": "A simple validator for PHP",
+    "type": "library",
+    "keywords": [
+        "validator",
+        "validation",
+        "validation library",
+        "validation tool",
+        "validation package",
+        "validation library for PHP",
+        "validation tool for PHP",
+        "validation package for PHP"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Raoul\\Validator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Raoul van Wijk",
+            "email": "raoul.van.wijk05@gmail.com"
+        }
+    ],
+    "require": {}
+}
