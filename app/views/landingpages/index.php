@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="main">
         <a href="#home"><img src="../../../public/img/logo-v3-klein.png" id="logo" class="small" alt=""></a>
         <nav>
             <ul class="nav__links">
@@ -30,14 +30,31 @@
         </ul>
     </header>
 
+    <!-- Hamburger menu -->
+    <div id="hamburger-menu" class="hide">
+        <div class="small-nav">
+            <span onclick="openNav()"><ion-icon name="menu-outline"></ion-icon></span>
+            <img src="../../../public/img/logo-v3-klein.png" alt="logo">
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#about">Over</a>
+            <a href="#openingstijden">Openingstijden</a>
+            <a href="#">Menu</a>
+            <a href="#">Contact</a>
+            <a href="#">Reserveren</a>
+            <a href="#"><ion-icon style="color: white;" name="person-circle-outline"></ion-icon>Inloggen</a>
+        </div>
+    </div>
+
     <section id="home" class="landing_section">
         <div class="background_image">
             <img src="../../../public/img/homepage.png" alt="">
             <div class="image_cover"></div>
             <div class="text">
                 <div class="content">
-                    <h1>"Quote"</h1>
-                    <!-- Wil je zeker zijn van een plekje in ons restaurant, reserveer dan hier. -->
+                    <h1>"Wil je zeker zijn van een plekje in ons restaurant, reserveer dan hier."</h1>
                     <div class="button">
                         <button><a href="<?= URLROOT; ?>/reserveren">Reserveer online</a></button>
                     </div>
@@ -82,50 +99,81 @@
                 <h1>Openingstijden</h1>
             </div>
         </div>
-
+        <div class="logo"><img src="../../../public/img/logo-v3-klein.png" alt="logo"></div>
+        <div class="content">
+            <div class="title">
+                <h2>Rocambolesque</h2>
+                <h2>Openingstijden en tarieven per 2 uur</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Maandag t/m donderdag</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>17:00 - 22:00</h3>
+                </div>
+                <div class="grid-item">
+                    <h4>Tarieven</h4>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <h5>Volwassenen</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>35 euro</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>Kinderen tot 18 jaar</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>25 euro</h5>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Vrijdag t/m zondag </h3>
+                </div>
+                <div class="grid-item">
+                    <h3>17:00 - 22:00</h3>
+                </div>
+                <div class="grid-item">
+                    <h4>Tarieven</h4>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <h5>Volwassenen</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>42 euro</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>Kinderen tot 18 jaar</h5>
+                </div>
+                <div class="grid-item">
+                    <h5>32 euro</h5>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h1>Bar</h1>
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    <h3>Maandag t/m zondag</h3>
+                </div>
+                <div class="grid-item">
+                    <h3>22:00 - 24:00</h3>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="menu">
-        <h1>Menu</h1>
-    </section>
-
 
     <?php require(APPROOT . '/views/includes/footer.php'); ?>
 
-
-    <script>
-        const sections = document.querySelectorAll("section[id]");
-        window.addEventListener("scroll", navHighlighter);
-
-        function navHighlighter() {
-            let scrollY = window.pageYOffset;
-            sections.forEach(current => {
-                const sectionHeight = current.offsetHeight;
-                const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
-                sectionId = current.getAttribute("id");
-                if (
-                    scrollY > sectionTop &&
-                    scrollY <= sectionTop + sectionHeight
-                ) {
-                    document.querySelector(".navigation a[href*=" + sectionId + "]").classList.add("active");
-                } else {
-                    document.querySelector(".navigation a[href*=" + sectionId + "]").classList.remove("active");
-                }
-            });
-        }
-    </script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var scrollY = window.scrollY;
-
-            if (window.scrollY > 80) {
-                document.querySelector('header').classList.add('scroll');
-                // document.getElementById('#logo').classList.add('small');
-            } else {
-                document.querySelector('header').classList.remove('scroll');
-                // document.getElementById('#logo').classList.remove('small');
-            }
-        });
-    </script>
+    <script src="../../../public/js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

@@ -9,6 +9,7 @@ define('DB_NAME', 'rocambolesque');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 define('URLROOT', 'http://www.restaurant-rocambolesque.local');
+// define('URLROOT', 'http://localhost:8080');
 
 define('SITENAME', 'Restaurant-Rocambolesque');
 // 

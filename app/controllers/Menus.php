@@ -20,7 +20,6 @@ class Menus extends Controller
 
 
         //echo $result[0]->DatumTijd;
-
         $rows = '';
         foreach ($result as $info) {
             $rows .= "<tr>

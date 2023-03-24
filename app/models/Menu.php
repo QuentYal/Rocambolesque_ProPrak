@@ -18,27 +18,28 @@ class Menu
                                  Drink.Name as DrinkName,
                                  Dessert.Name as DessertName
 
-                         FROM Menu
-                         INNER JOIN SoupMenu
-                         ON Menu.Id = SoupMenu.MenuId
-                         INNER JOIN Soup
-                         ON SoupMenu.SoupId = Soup.Id
-                         INNER JOIN SaladMenu
-                         ON Menu.Id = SaladMenu.MenuId
-                         INNER JOIN Salad
-                         ON SaladMenu.SaladId = Salad.Id
-                         INNER JOIN MainDishMenu
-                         ON Menu.Id = MainDishMenu.MenuId
-                         INNER JOIN MainDish
-                         ON MainDishMenu.MainDishId = MainDish.Id
-                         INNER JOIN DrinkMenu
-                         ON Menu.Id = DrinkMenu.MenuId
-                         INNER JOIN Drink
-                         ON DrinkMenu.DrinkId = Drink.Id
-                         INNER JOIN DessertMenu
-                         ON Menu.Id = DessertMenu.MenuId
-                         INNER JOIN Dessert
-                         ON DessertMenu.DessertId = Dessert.Id
+                            FROM Menu
+                            INNER JOIN SoupMenu
+                            ON Menu.Id = SoupMenu.MenuId
+                            INNER JOIN Soup
+                            ON SoupMenu.SoupId = Soup.Id
+                            INNER JOIN SaladMenu
+                            ON Menu.Id = SaladMenu.MenuId
+                            INNER JOIN Salad
+                            ON SaladMenu.SaladId = Salad.Id
+                            INNER JOIN MainDishMenu
+                            ON Menu.Id = MainDishMenu.MenuId
+                            INNER JOIN MainDish
+                            ON MainDishMenu.MainDishId = MainDish.Id
+                            INNER JOIN DrinkMenu
+                            ON Menu.Id = DrinkMenu.MenuId
+                            INNER JOIN Drink
+                            ON DrinkMenu.DrinkId = Drink.Id
+                            INNER JOIN DessertMenu
+                            ON Menu.Id = DessertMenu.MenuId
+                            INNER JOIN Dessert
+                            ON DessertMenu.DessertId = Dessert.Id
+                            WHERE Menu.isActive = 1
                          ");
 
 
@@ -55,27 +56,27 @@ class Menu
                                  Drink.Name as DrinkName,
                                  Dessert.Name as DessertName
 
-                         FROM Menu
-                         INNER JOIN SoupMenu
-                         ON Menu.Id = SoupMenu.MenuId
-                         INNER JOIN Soup
-                         ON SoupMenu.SoupId = Soup.Id
-                         INNER JOIN SaladMenu
-                         ON Menu.Id = SaladMenu.MenuId
-                         INNER JOIN Salad
-                         ON SaladMenu.SaladId = Salad.Id
-                         INNER JOIN MainDishMenu
-                         ON Menu.Id = MainDishMenu.MenuId
-                         INNER JOIN MainDish
-                         ON MainDishMenu.MainDishId = MainDish.Id
-                         INNER JOIN DrinkMenu
-                         ON Menu.Id = DrinkMenu.MenuId
-                         INNER JOIN Drink
-                         ON DrinkMenu.DrinkId = Drink.Id
-                         INNER JOIN DessertMenu
-                         ON Menu.Id = DessertMenu.MenuId
-                         INNER JOIN Dessert
-                         ON DessertMenu.DessertId = Dessert.Id
+                            FROM Menu
+                            INNER JOIN SoupMenu
+                            ON Menu.Id = SoupMenu.MenuId
+                            INNER JOIN Soup
+                            ON SoupMenu.SoupId = Soup.Id
+                            INNER JOIN SaladMenu
+                            ON Menu.Id = SaladMenu.MenuId
+                            INNER JOIN Salad
+                            ON SaladMenu.SaladId = Salad.Id
+                            INNER JOIN MainDishMenu
+                            ON Menu.Id = MainDishMenu.MenuId
+                            INNER JOIN MainDish
+                            ON MainDishMenu.MainDishId = MainDish.Id
+                            INNER JOIN DrinkMenu
+                            ON Menu.Id = DrinkMenu.MenuId
+                            INNER JOIN Drink
+                            ON DrinkMenu.DrinkId = Drink.Id
+                            INNER JOIN DessertMenu
+                            ON Menu.Id = DessertMenu.MenuId
+                            INNER JOIN Dessert
+                            ON DessertMenu.DessertId = Dessert.Id
                          ");
 
 
