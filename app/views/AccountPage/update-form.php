@@ -45,7 +45,7 @@
         <?= $errors['password'][0] ?>
       </div>
     <?php endif; ?>
-    <input type="password" name="password">
+    <input type="password" name="password" required>
     <input type="submit" value="Update">
   </form>
 </body>

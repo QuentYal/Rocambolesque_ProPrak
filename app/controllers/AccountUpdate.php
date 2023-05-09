@@ -39,14 +39,14 @@ class AccountUpdate extends Controller
     }
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-      try {
-        (new AccountValidator())->validate($_POST);
-      } catch (ValidationException $e) {
-        Session::flash('errors', $e->getErrors());
-        Session::flash('old', $_POST);
-        return $this->redirect("/accountupdate/{$id}");
-      } catch (Exception $e) {
-      }
+      // try {
+      //   (new AccountValidator())->validate($_POST);
+      // } catch (ValidationException $e) {
+      //   Session::flash('errors', $e->getErrors());
+      //   Session::flash('old', $_POST);
+      //   return $this->redirect("/accountupdate/{$id}");
+      // } catch (Exception $e) {
+      // }
 
       if (isset($_POST['password'])) {
         $new_password = password_hash($_POST['password'], PASSWORD_DEFAULT);
